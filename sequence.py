@@ -9,6 +9,8 @@ class Sequence ():
     def __init__(self):
         
         self.stocknumber = []
+        self.sleep = None
+        self.randint = None
 
     def display_stocknumber(self):
         """ Display all numbers in stocknumbers """

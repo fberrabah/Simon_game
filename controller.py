@@ -1,6 +1,6 @@
 from player import Player
 from sequence import Sequence
-import sys
+import sys #for quit program
 
 class Controller():
     def __init__(self):
@@ -20,22 +20,20 @@ class Controller():
     def player_play(self): 
         """ verify answer and list of stocknumber """
         for number in self.sequence.stocknumber:
-            answer = input("Veuillez entrer votre nombre :")
+            answer = input("Veuillez entrez votre nombre :")
             try:
-                answer=int(answer)     
+                answer = int(answer)     
             except ValueError:
-                print("vous n'avez pas saisi de nombre")
-                continue
+                print("vous avez perdu vous n'avez pas saisi de nombre")
             if answer != number:
                 return False        
 
         
-
     def replay(self):
         """answer player if he want replay"""
         print("Vous avez perdu!!")
         while True: # condition for player if want replay
-            replay=input("Voulez-vous rejouer? oui/non ").lower() #.lower for translate upper in lower
+            replay = input("Voulez-vous rejouer? oui/non ").lower() #.lower for translate upper in lower
             if replay == "oui": #if say yes 
                 self.sequence.stocknumber = []
                 break

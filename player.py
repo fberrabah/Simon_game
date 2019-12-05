@@ -1,6 +1,7 @@
 class Player ():
     
     def __init__(self): 
+        """contructor with attribut name and score"""
         self.name = None  
         self.score = 0 
 

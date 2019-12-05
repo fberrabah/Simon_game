@@ -4,6 +4,7 @@ import sys
 
 class Controller():
     def __init__(self):
+        """ """
         self.player = Player()
         self.sequence = Sequence()
     
@@ -11,6 +12,7 @@ class Controller():
         self.player.start()
         
     def computer_play(self):
+        """ """
         self.sequence.add_number()
         self.sequence.display_stocknumber()
 
@@ -29,6 +31,7 @@ class Controller():
         
 
     def replay(self):
+        """answer player if he want replay"""
         print("Vous avez perdu!!")
         while True: # condition for player if want replay
             replay=input("Voulez-vous rejouer? oui/non ").lower() #.lower for translate upper in lower

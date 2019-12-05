@@ -5,7 +5,7 @@ class Player ():
         self.score = 0 
 
     def start(self):
-        """ask name at player and loop if dont inform good name """
+        """ Ask name at player and loop if dont inform good name """
         name = input("Veuillez entrer votre nom pour jouer :")
         while self.checkstart(name) is False:
             name = input("Veuillez entrer votre nom pour jouer :")
@@ -14,7 +14,7 @@ class Player ():
         print("C'est partie le jeu commence!!")
 
     def checkstart(self, name):
-        """verify name and return True or False"""
+        """ Verify name and return True or False"""
         if len(name) > 1 and len(name) < 15 :
             return True
         else : 

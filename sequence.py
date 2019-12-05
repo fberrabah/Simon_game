@@ -11,7 +11,7 @@ class Sequence ():
         self.stocknumber = []
 
     def display_stocknumber(self):
-        """display all numbers in stocknumbers"""
+        """ Display all numbers in stocknumbers """
         for number in self.stocknumber:
             print(number)
             time.sleep(3)

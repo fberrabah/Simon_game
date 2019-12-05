@@ -4,20 +4,21 @@ import sys
 
 class Controller():
     def __init__(self):
-        """ """
+        """ objet player and sequence call attribut """
         self.player = Player()
         self.sequence = Sequence()
     
     def controller_initialise(self):
+        """objet player call attribut """
         self.player.start()
         
     def computer_play(self):
-        """ """
+        """ call objet with methode """
         self.sequence.add_number()
         self.sequence.display_stocknumber()
 
     def player_play(self): 
-        """verify answer and list of stocknumber"""
+        """ verify answer and list of stocknumber """
         for number in self.sequence.stocknumber:
             answer = input("Veuillez entrer votre nombre :")
             try:

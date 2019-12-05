@@ -8,7 +8,7 @@ if __name__ == "__main__":
     controller.controller_initialise()
     controller.computer_play()
     controller.player_play()
-        
+                
     while True :
         controller.computer_play()
         result = controller.player_play() 

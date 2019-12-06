@@ -1,13 +1,29 @@
 from random import *
-import platform
+import time
 import os
+
+#os.system('cls' if os.name == 'nt' else 'clear')
  
-os.system('cls' if os.name == 'nt' else 'clear')
+class Sequence ():
 
-clean(platform.system())
+    def __init__(self):
+        
+        self.stocknumber = []
+        self.sleep = None
+        self.randint = None
 
-class sequence():
+    def display_stocknumber(self):
+        """ Display all numbers in stocknumbers """
+        for number in self.stocknumber:
+            print(number)
+            time.sleep(self.sleep)
+            os.system("clear")
 
-    def number():
-        print random.randint(1, 100) 
-clean(platform.system())
+
+    def add_number(self):
+        self.stocknumber.append(randint(1, self.randint))
+
+
+        
+
+    

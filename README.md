@@ -23,7 +23,7 @@ Votre jeu devra :
 
 # Bonus
 
-- Le joueur peut choisir de rejouer une nouvelle partie quand il s'est trompé **La séquance aléatoire de nombre doit être différent du précédent !**
+- Le joueur peut choisir de rejouer une nouvelle partie quand il s'est trompé **la séquance aléatoire de nombre doit être différent du précédent !**
 
 # Ressources 
 

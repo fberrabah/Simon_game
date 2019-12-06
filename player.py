@@ -12,7 +12,6 @@ class Player ():
             name = input("Veuillez entrer votre nom pour jouer :")
         self.name = name
         print("Bonne chance {}".format(name))
-        print("C'est partie le jeu commence!!")
 
     def checkstart(self, name):
         """ Verify name and return True or False"""
@@ -20,6 +19,7 @@ class Player ():
             return True
         else : 
             return False
+    
 
 
 

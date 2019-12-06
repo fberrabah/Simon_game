@@ -6,8 +6,9 @@ if __name__ == "__main__":
     
     controller = Controller()
     controller.controller_initialise()
+    
                 
-    while True :
+    while True :    
         controller.computer_play()
         result = controller.player_play()
         if result == False :

@@ -11,9 +11,14 @@ class Controller():
     def controller_initialise(self):
         """objet player call attribut """
         self.player.start()
+        self.dificulty()
+        
+
+        
         
     def computer_play(self):
         """ call objet with methode """
+        
         self.sequence.add_number()
         self.sequence.display_stocknumber()
 
@@ -42,3 +47,24 @@ class Controller():
                 sys.exit() #for exit program 
             else:
                 print("C'est oui ou non!!") #if answer are not oui ou non 
+    
+    def dificulty(self):
+            level = int(input("Veuillez choisir le niveau de difficulté : \n ~~~~ Niveau Facile taper : 1 ~~~~ \n ~~~~ Niveau moyen taper : 2 ~~~~ \n ~~~~ Niveau difficile taper : 3 ~~~~   :"))
+        
+            if level == 1 :
+                self.sequence.sleep = 3 
+                self.sequence.randint = 10
+            elif level == 2 : 
+                self.sequence.sleep = 2 
+                self.sequence.randint = 20
+            elif level == 3 :   
+                self.sequence.sleep = 1 
+                self.sequence.randint = 100
+        
+            else:
+                print("C'est 1, 2 ou 3")
+
+        
+            print("C'est partie le jeu commence!!")
+
+            

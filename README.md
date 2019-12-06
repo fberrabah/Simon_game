@@ -7,7 +7,7 @@ Créer le <a href="https://fr.wikipedia.org/wiki/Simon_(jeu)">jeu Simon</a> en u
 Le joueur entre son nom et choisit la difficulté du jeu qui sera répartie de la maniere suivante:
   - facile : nombres entre 1 et 10, intervalle entre deux nombres de 3 secondes.
   - moyen : nombres entre 1 et 20, intervalle entre deux nombres de 2 secondes.
-  - difficile : nombres entre 1 et 100, intervalle entre deux nombres de 1 secondes.
+  - difficile : nombres entre 1 et 100, intervalle entre deux nombres de 1 seconde.
   
 Le jeu affiche à l'écran une séquence aléatoire de nombres qui grandit chaque tour de jeux.L'utilisateur doit indiquer l'ensemble des nombres de la séquence via une série d'inputs.
 

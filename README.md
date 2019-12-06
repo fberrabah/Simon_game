@@ -1,6 +1,6 @@
 # Python3 : Jeu Simon
 
-Créer le <a href="https://fr.wikipedia.org/wiki/Simon_(jeu)">jeu du pendu</a> en utilisant python3.
+Créer le <a href="https://fr.wikipedia.org/wiki/Simon_(jeu)">jeu Simon</a> en utilisant python3.
 
 # Déroulement 
 

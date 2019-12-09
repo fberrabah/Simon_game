@@ -41,6 +41,7 @@ class Controller():
             replay = input("Voulez-vous rejouer? oui/non ").lower() #.lower for translate upper in lower
             if replay == "oui": #if say yes 
                 self.sequence.stocknumber = []
+                self.difficulty()
                 break
             elif replay == "non":
                 print("A bientôt.")

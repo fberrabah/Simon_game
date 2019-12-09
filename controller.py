@@ -11,7 +11,7 @@ class Controller():
     def controller_initialise(self):
         """objet player call attribut """
         self.player.start()
-        self.dificulty()
+        self.difficulty()
         
 
         
@@ -25,11 +25,11 @@ class Controller():
     def player_play(self): 
         """ verify answer and list of stocknumber """
         for number in self.sequence.stocknumber:
-            answer = input("Veuillez entrez votre nombre :")
+            answer = input("Veuillez entrer votre nombre :")
             try:
                 answer = int(answer)     
             except ValueError:
-                print("vous avez perdu vous n'avez pas saisi de nombre")
+                print("Vous n'avez pas saisi de nombre")
             if answer != number:
                 return False        
 
@@ -48,22 +48,22 @@ class Controller():
             else:
                 print("C'est oui ou non!!") #if answer are not oui ou non 
     
-    def dificulty(self):
-            level = int(input("Veuillez choisir le niveau de difficulté : \n ~~~~ Niveau Facile taper : 1 ~~~~ \n ~~~~ Niveau moyen taper : 2 ~~~~ \n ~~~~ Niveau difficile taper : 3 ~~~~   :"))
-        
-            if level == 1 :
+    def difficulty(self):
+            level = input(" ~~~~ Niveau Facile taper : 1    ~~~~ \n ~~~~ Niveau moyen taper : 2     ~~~~ \n ~~~~ Niveau difficile taper : 3 ~~~~ \n Veuillez choisir le niveau de difficulté : ")
+
+            if level == "1" :
                 self.sequence.sleep = 3 
                 self.sequence.randint = 10
-            elif level == 2 : 
+            elif level == "2" : 
                 self.sequence.sleep = 2 
                 self.sequence.randint = 20
-            elif level == 3 :   
+            elif level == "3" :   
                 self.sequence.sleep = 1 
                 self.sequence.randint = 100
         
             else:
                 print("C'est 1, 2 ou 3")
-
+                self.difficulty()
         
             print("C'est partie le jeu commence!!")
 
